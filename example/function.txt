@@ -1,0 +1,14 @@
+// 服务器启动
+func start(){
+    int server bbb   // server变量加锁
+    map server ddd[string:int]
+    ddd["aaa"] = 1
+    // server变量仅可定义于start方法内
+}
+
+// 用户登录
+func login(){
+    string user aaa
+    int user ccc[]
+    // user变量仅可定义于login方法内
+}

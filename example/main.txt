@@ -1,0 +1,46 @@
+#include "aaa"
+
+#define P print // 常量替换，注释屏蔽，是否重复定义检测
+
+func main() int{
+    int bbb = 12
+        // 检测if后是否bool类型
+    if bbb == 12 {
+        // 检测bbb是否定义
+        int bbb = 15 * bbb + aaa() * aaa() // 运算优先级处理
+        // 检测print是否定义
+        P(aaa, ddd["aaa"])
+    } else {
+        // 检测变量是否定义，方法是否定义，方法返回值是否正确
+        // 检测方法调用参数是否齐全
+        aaa = ttt()
+        print(bbb, aaa)
+        return // 返回
+    }
+    start:  // 标号处理
+    int ccc[] = {1, 2, 3}
+    for int i = 0; i<len(ccc); i++ {
+        // 幕后添加次数变量，每次循环均判断，以此实现最大循环次数可控
+        string sTmp  = "bbb"
+        break       // 跳出
+        continue    // 跳过
+        print(sTmp + i)
+        print(ccc[i])
+    }
+    goto start // 跳转处理
+}
+
+// 参数默认值处理
+func ttt(int a=0) string{
+    // 检测是否有返回值、返回值类型是否正确
+    return "dddd"
+}
+
+func aaa() int{
+    // 递归处理，幕后添加次数变量，每次循环均判断，以此实现最大递归次数可控
+    return aaa(1) * 500
+}
+
+func bbb() int,string{
+    return 0,"aa"   // 多返回值
+}
